@@ -1,15 +1,13 @@
-#include <stdlib.h>
-#include <time.h>
-#include <stdio.h>
-#include "main.h"
-/**
+#include "main.h" 
+/*
  * main.
  *
  * Return: Always 0.
  */
-int main(void)
+ int _abs(int n)
 {
-	printf('_putchar \n');
-	return (0);
-
+	if (n >= 0)
+		return (n);
+	else
+		return (-n);
 }

@@ -1,15 +1,31 @@
-#include <stdlib.h>
-#include <time.h>
-#include <stdio.h>
 #include "main.h"
 /**
  * main.
  *
  * Return: Always 0.
  */
-int main(void)
+void times_table(void)
 {
-	printf('_putchar \n');
-	return (0);
+	int num, mult, prod;
 
+	for (num = 0; num <= 9; num++)
+	{
+		_putchar('0');
+
+		for (mult = 1; mult <= 9; mult++)
+		{
+			_putchar(',');
+			_putchar(' ');
+
+			prod = num * mult;
+
+			if (prod <= 9)
+				_putchar(' ');
+			else
+				_putchar((prod / 10) + '0');
+
+			_putchar((prod % 10) + '0');
+		}
+		_putchar('\n');
+	}
 }

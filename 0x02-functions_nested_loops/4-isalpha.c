@@ -1,15 +1,14 @@
-#include <stdlib.h>
-#include <time.h>
-#include <stdio.h>
 #include "main.h"
 /**
  * main.
  *
  * Return: Always 0.
  */
-int main(void)
+int _isalpha(int c)
 {
-	printf('_putchar \n');
-	return (0);
-
+	if ((c >= 'a' && c <= 'z') ||
+	    (c >= 'A' && c <= 'Z'))
+		return (1);
+	else
+		return (0);
 }
