@@ -1,11 +1,17 @@
-#include "main.h" 
 /*
- * _apbs -  ad.
- * @n: dad
- *
- * Return: Always 0.
+ * File: 6-abs.c
+ * Author: Severin
  */
- int _abs(int n)
+
+#include "main.h"
+
+/**
+ * _abs - Computes the absolute value of an integer.
+ * @n: The integer to be computed.
+ *
+ * Return: The absolute value of the integer.
+ */
+int _abs(int n)
 {
 	if (n >= 0)
 		return (n);

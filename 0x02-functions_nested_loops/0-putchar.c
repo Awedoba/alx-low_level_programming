@@ -1,6 +1,13 @@
+/*
+ * File: 0-holberton.c
+ * Author: severin
+ *
+ */
+
 #include "main.h"
+
 /**
- * main.
+ * main - Prints "_putchar" and new line.
  *
  * Return: Always 0.
  */
@@ -16,5 +23,4 @@ int main(void)
 	_putchar('r');
 	_putchar('\n');
 	return (0);
-
 }

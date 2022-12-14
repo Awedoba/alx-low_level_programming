@@ -1,10 +1,14 @@
-#include "main.h"
-/**
- * main.
- *
- * Return: Always 0.
+/*
+ * File: 1-alphabet.c
+ * Author: Severin
  */
-void print_alphabet_x10(void)
+
+#include "main.h"
+
+/**
+ * print_alphabet - prints the alphabet in lowercase.
+ */
+void print_alphabet(void)
 {
 	char l;
 

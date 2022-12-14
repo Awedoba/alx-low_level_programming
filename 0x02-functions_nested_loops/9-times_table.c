@@ -1,8 +1,12 @@
+/*
+ * File: 9-times_table.c
+ * Author: Severin
+ */
+
 #include "main.h"
+
 /**
- * main.
- *
- * Return: Always 0.
+ * times_table - Prints the 9 times table.
  */
 void times_table(void)
 {

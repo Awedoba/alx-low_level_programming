@@ -1,8 +1,16 @@
+/*
+ * File: 10-add.c
+ * Author: Severin
+ */
+
 #include "main.h"
+
 /**
- * main.
+ * add - Adds two integers.
+ * @num1: The 1st integer to add.
+ * @num2: The 2nd integer to add.
  *
- * Return: Always 0.
+ * Return:  result of the addition.
  */
 int add(int num1, int num2)
 {

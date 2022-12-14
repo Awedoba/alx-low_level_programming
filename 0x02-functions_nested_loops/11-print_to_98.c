@@ -1,8 +1,15 @@
+/*
+ * File: 11-print_to_98.c
+ * Author: Severin
+ */
+
+#include <stdio.h>
 #include "main.h"
+
 /**
- * main.
+ * print_to_98 - Prints numbers from input to 98
  *
- * Return: Always 0.
+ * @n: The number to begin counting at.
  */
 void print_to_98(int n)
 {
