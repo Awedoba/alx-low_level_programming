@@ -1,10 +1,10 @@
-#include <stdlib.h>
-#include <time.h>
-#include <stdio.h>
+/*
+ * * fucntion small letters
+*/
 #include "main.h"
 /**
  * main.
- *
+ * @c: The character to be checked
  * Return: Always 0.
  */
 int _islower(int c)
