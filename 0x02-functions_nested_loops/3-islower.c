@@ -1,9 +1,10 @@
 /*
- * * fucntion small letters
-*/
+ * File: 3-islower.c
+ * Authur: severin
+ */
 #include "main.h"
 /**
- * main.
+ * _islower
  * @c: The character to be checked
  * Return: Always 0.
  */

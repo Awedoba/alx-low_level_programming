@@ -1,8 +1,13 @@
+/*
+ * File: 8-24_hours.c
+ * Author : severin
+ */
 #include "main.h"
 /**
- * main.
+ * jack_bauer - a.
  *
- * Return: Always 0.
+ *
+ * 
  */
 void jack_bauer(void)
 {

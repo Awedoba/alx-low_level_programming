@@ -1,6 +1,11 @@
+/*
+ * File: 7-print_last_digit.c
+ * Author: severin
+ */
 #include "main.h"
 /**
- * main.
+ * print_last_digit .
+ * @n: a
  *
  * Return: Always 0.
  */int print_last_digit(int n)

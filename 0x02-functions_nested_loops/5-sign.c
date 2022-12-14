@@ -1,6 +1,11 @@
+/*
+ * File: 5-sign.c
+ * Author: severin
+ */
 #include "main.h"
 /**
- * main.
+ * print_sign 
+ * @n : vari
  *
  * Return: Always 0.
  */
