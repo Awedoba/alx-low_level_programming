@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - reset_to_98
+ * reset_to_98 - function
  *
  * Description: change variable data by pointer
  *
