@@ -9,33 +9,33 @@
  */
 int _atoi(char *s)
 {
-    int c = 0;
-    unsigned int ni = 0;
-    int min = 1;
-    int isi = 0;
+int a = 0;
+unsigned int n = 0;
+int min = 1;
+int i = 0;
 
-    while (s[c])
+while (s[a])
+{
+    if (s[a] == 45)
     {
-        if (s[c] == 45)
-        {
-            min *= -1;
-        }
-
-        while (s[c] >= 48 && s[c] <= 57)
-        {
-            isi = 1;
-            ni = (ni * 10) + (s[c] - '0');
-            c++;
-        }
-
-        if (isi == 1)
-        {
-            break;
-        }
-
-        c++;
+        min *= -1;
     }
 
-    ni *= min;
-    return (ni);
+    while (s[a] >= 48 && s[a] <= 57)
+    {
+        n = 1;
+        n = (n * 10) + (s[a] - '0');
+        a++;
+    }
+
+    if (n == 1)
+    {
+        break;
+    }
+
+    a++;
+}
+
+n *= min;
+return (n);
 }
