@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * print_array - prints n element of an array of integers
  * Auth0r: Severin
@@ -13,8 +13,8 @@ void print_array(int *a, int n)
 
     for (x = 0; x < n; x++)
         if (x != n - 1)
-            _putchar(a[x]);
+            printf("%d, ", a[x]);
         else
-            _putchar(a[x]);
-    _putchar("\n");
+            printf("%d", a[x]);
+    printf("\n");
 }
