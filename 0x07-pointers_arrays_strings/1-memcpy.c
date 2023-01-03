@@ -9,12 +9,17 @@
  *Return: returns new value of target
  */
 
-char *_memset(char *s, char b, unsigned int n)
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	while (n)
+	int i = 0;
+	int j = 0;
+
+	while (n > 0)
 	{
-		s[n - 1] = b;
+		dest[i] = src[j];
+		i++;
+		j++;
 		n--;
 	}
-	return (s);
+	return (dest);
 }
