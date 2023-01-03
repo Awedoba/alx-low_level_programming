@@ -1,22 +1,20 @@
-#include "main.h"
+#include <stddef.h>
 /**
- *_strchr - Returns a pointer to the first occurrence
- * Auth0r: Severin
- *character is not found
+ * _strchr - locates a character in a string
+ * * Auth0r: Severin
+ * @s: the string
+ * @c: the character
  *
- *@s:string targeted
- *@c:character targeted
- *
- *Return: returns pointer to first occcurence of c
+ * Return: a pointer to a character aka the character found
  */
 char *_strchr(char *s, char c)
 {
     int i;
 
-    for (i = 0; (s[i] != c) && (s[i] != '\0'); i++)
-        ;
-    if (s[i] == c)
-        return (s + i);
-    else
-        return (NULL);
+    for (i = 0; s[i] != '\0'; i++)
+    {
+        if (s[i] == c)
+            return (&s[i]);
+    }
+    return (0);
 }

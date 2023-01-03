@@ -1,36 +1,18 @@
 #include "main.h"
+#include <stdio.h>
+
 /**
- *_strstr - The _strstr() function finds the first occurrence
- * Auth0r: Severin
- * of the substring needle in the string haystack.
- * The terminating null bytes (\0) are not compared
- *@haystack: string where the search is made
- *@needle: string whose occurence is searched in haystack
- *Return:Returns a pointer to the beginning of the located
- * substring, or NULL if the substring is not found.
+ * main - check the code for Holberton School students.
+ *
+ * Return: Always 0.
  */
-
-char *_strstr(char *haystack, char *needle)
+int main(void)
 {
-    int i;
+    char *s = "hello, world";
+    char *f = "world";
+    char *t;
 
-    if (*needle == 0)
-        return (haystack);
-
-    while (*haystack)
-    {
-        i = 0;
-
-        if (haystack[i] == needle[i])
-        {
-            do
-            {
-                if (needle[i + 1] == '\0')
-                    return (haystack);
-                i++;
-            } while (haystack[i] == needle[i]);
-        }
-        haystack++;
-    }
-    return ('\0');
+    t = _strpbrk(s, f);
+    printf("%s\n", t);
+    return (0);
 }

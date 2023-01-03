@@ -7,12 +7,15 @@
  *@n:number of bytes to copy
  *Return: returns a pointer to n
  */
-char *_memcpy(char *dest, char *src, unsigned int n)
+char *_memset(char *s, char b, unsigned int n)
 {
-    unsigned int i = 0;
+    int i = 0;
 
-    for (; i < n; i++)
-        dest[i] = src[i];
-
-    return (dest);
+    while (n > 0)
+    {
+        s[i] = b;
+        i++;
+        n--;
+    }
+    return (s);
 }
